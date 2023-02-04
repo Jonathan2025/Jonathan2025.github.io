@@ -61,7 +61,7 @@ button {
   }
 
 body{
-    background-image: url("/Images/background.webp");
+    background-image: url("https://jonathan2025.github.io/Images/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     margin:0px;
