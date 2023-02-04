@@ -1,0 +1,191 @@
+/* style the instructions */
+aside{
+    /* have the instructions show when the player clicks on the instructions button */
+    display: none;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgray;
+    font-family: 'Star Wars', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+/* style the lego logo */
+#lego{
+    height:25%;
+    width: 25%;
+    padding:20px;
+}
+
+/* style the description */
+#description{
+    padding-left: 1%;
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* style the player stats tables */
+#player1table{
+    float: left;
+    border: 3px solid #2E67F8;
+    background-color: rgba(0, 0, 128, 0.5);
+    margin:10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#player2table{
+    float: right;
+    border:3px solid red;
+    background-color: rgba(255, 0, 0, 0.7);
+    margin:10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+table{
+    display: inline-block;
+}
+
+/* style the buttons */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+button {
+    padding: 10px 20px;
+  }
+
+body{
+    background-image: url(/images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0px;
+    
+}
+
+#playerTurn{
+    font-family: 'Star Wars', sans-serif;
+    text-align: center;
+    color:white;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px black;
+    font-size: xx-large;
+}
+
+#grid{
+    display:grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 5px;
+    grid-gap: 3px;
+    display:none;
+    
+}
+
+/* the boxes that were created for the grid in javascript */
+.box{
+    background-color: rgba(173, 216, 230, 0.5);
+    text-align: center;
+    /* line-height: 1.5; */
+    border:1px solid black;
+    width: 70px;
+    height:75px;
+}
+
+/* hovering over the boxes */
+.highlight{
+    background-color: orange;
+}
+/* hit marker on the boxes */
+.hit-highlight{
+    background-color: red;
+
+}
+
+/* fit the images in the boxes */
+.box img{
+    width:50%;
+    height:80%;
+    display:none;
+}
+
+
+/* style the clone and droid icons */
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* style the tables */
+.table{
+    border: 2px solid black;
+    display: none; 
+}
+
+
+/* style the player grids which houses player's game pieces */
+.characters-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    border: 3px solid gray;
+  }
+
+#grid2{
+    background-color:#2E67F8;
+
+}
+
+#grid3{
+    background-color: red;
+}
+
+
+
+/* game pieces */
+.grid-item {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.player1-piece{
+    width: 75px;
+    height: 75px;
+    
+}
+
+.player2-piece{
+    width: 70px;
+    height: 75px;
+    
+}
+
+
+/* style the buttons  */
+input[type="button"]{
+    border-radius: 44px;
+    background: #f8d31b;
+    box-shadow:  -37px -37px 82px #ceaf16,
+             37px 37px 82px #fff720;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+
+}
+
+
+/* styling the winner text */
+#winner{
+    font-size: 100px;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8d31b;
+    display:none;
+}
