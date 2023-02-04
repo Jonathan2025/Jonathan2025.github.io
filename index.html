@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="/js/app.js" defer></script>
+    <!-- import the star wars font style  -->
+    <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/star-wars');</style>
+    <title>LEGO Star Wars Battleship!</title>
+
+    <!-- this is to prevent the 404 error we encountered with our images -->
+    <link rel="shortcut icon" href="#">
+
+</head>
+<header>
+    <img id="lego" src="Images/lego.png">
+
+</header>
+<body>
+    <!-- the winner text will appear once the winner is announced -->
+    <h1 id="winner"></h1>
+    <!-- this text will only appear on the home screen -->
+    <h2 id="description">Star Wars Battleship Attack Set!</h2>
+    <h2 id="playerTurn"></h2>
+    <!-- buttons -->
+    <div class="btn-container">
+        <input type="button" id="start" value="Start Game">
+        <input type="button" id="instructionsBtn" value="instructions">
+        <input type="button" id="restartBtn" value="A New Hope">
+    </div>
+
+     <aside>
+        <section class="instructions">
+            <h2>How to Play the Game</h2>
+            <p> New from Lego Star Wars! The planet is under attack and the faith of the republic is in your hands!
+                This game is a twist on the board game Battleship. once the players start the game, the game pieces will be scattered throughout the grid. 
+                Player one must hunt down the droid army by hovering over the grid and clicking to strike!
+                At the same time, player two strikes back and attempts to destory player one's game pieces.
+                but watch out! you do not want to fire upon your own troops!
+                The player who reaches the maximum points wins the game!
+                you can click on "a new hope" button to restart the game!
+                May the force be with you!
+            </p>
+            <input type ="button" id="closeInstructions" value="Let's Play!">
+        </section>
+
+    </aside>
+
+    <!-- add game stats for each player -->
+    <table class="table" id="player1table">
+        <tr>
+            <td colspan="3">Player 1 Stats</td>
+            <td rowspan="3">
+                <img class= icon id = "cloneIcon" src ="Images/cloneIcon.jpeg"> 
+            </td>
+        </tr>
+        <tr> 
+            <td> Points </td>
+            <td id="player1Points">0</td>
+        </tr>
+        <tr> 
+            <td> Clones </td>
+            <td id="cloneCount">8</td>
+        </tr>
+        <tr> 
+            <td> Heros </td>
+            <td id="heroCount">2</td>
+        </tr>
+
+    </table>
+
+    <table class="table" id="player2table">
+        <tr>
+            <td colspan="3">Player 2 Stats</td>
+            <td rowspan="3">
+                <img class=icon id = "droidIcon" src ="Images/droidIcon.jpeg"> 
+            </td>
+        </tr>
+        <tr> 
+            <td> Points </td>
+            <td id="player2Points">0</td>
+        </tr>
+        <tr> 
+            <td> Droids </td>
+            <td id="droidCount">8</td>
+        </tr>
+        <tr> 
+            <td> Villans </td>
+            <td id="villanCount">2</td>
+        </tr>
+
+    </table>
+
+     <!-- create the grid for player one game pieces  -->
+     <div id="grid2" class="characters-container" id="player1Grid"> 
+        <img src="/Images/clone1.png" class="player1-piece">
+        <img src="/Images/clone1.png" class="player1-piece">
+        <img src="/Images/clone1.png" class="player1-piece">
+        <img src="/Images/clone1.png" class="player1-piece">
+        <img src="/Images/clone1.png" class="player1-piece">
+        <img src="/Images/clone2.png" class="player1-piece">
+        <img src="/Images/clone3.png" class="player1-piece">
+        <img src="/Images/clone4.png" class="player1-piece">
+        <img src="/Images/yoda.png" class="player1-piece">
+        <img src="/Images/obiwan.png" class="player1-piece">
+    
+    </div>
+
+    <!-- create the grid for player two game pieces  -->
+    <div id="grid3" class="characters-container" id="player2Grid"> 
+        <!-- the boxes will be created from app.js -->
+        <img src="/Images/droid1.png" class="player2-piece">
+        <img src="/Images/droid1.png" class="player2-piece">
+        <img src="/Images/droid1.png" class="player2-piece">
+        <img src="/Images/droid1.png" class="player2-piece">
+        <img src="/Images/droid1.png" class="player2-piece">
+        <img src="/Images/droid2.png" class="player2-piece">
+        <img src="/Images/droid3.png" class="player2-piece">
+        <img src="/Images/droid3.png" class="player2-piece">
+        <img src="/Images/grevious.png" class="player2-piece">
+        <img src="/Images/dooku.png" class="player2-piece">
+    
+    </div>
+
+
+
+    <!-- create the main game grid -->
+    <div id="grid" class="grid-container">
+        <!-- we will be able to drop our game pieces here -->
+        <!-- the boxes will be created by the for loop in app.js -->
+    </div>
+    
+</body>
+</html>
+
