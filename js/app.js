@@ -308,7 +308,11 @@ startBtn.addEventListener("click", function(){
     document.getElementById("player2table").style.display ="block"
     document.getElementById("grid").style.display = "grid"
     document.getElementById("lego").style.display ="none"
-    document.getElementById("description").style.display ="none"
+
+    const collection = document.getElementsByClassName("description")
+        for (let i = 0; i < collection.length; i++) {
+            collection[i].style.display = "none"
+        }
 
 })
 
