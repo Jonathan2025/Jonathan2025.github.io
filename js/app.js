@@ -63,9 +63,12 @@ function addPlayer1PiecestoGrid(randomPlayer1Indexes,boxes,player1pieces){
     // for each of the random indexes/boxes that were picked
     // Place one of the player 1's characters inside 
     randomPlayer1Indexes.forEach(function(index, i) {
+        console.log(index)
+        console.log(i)
         //create a new image
-        let image = new Image();
+        let image = new Image()
         // set the new image source to the image source from player 1 game pieces
+        console.log(player1pieces)
         image.src = player1pieces[i].src
         console.log(image.src)
         boxes[index].appendChild(image)
@@ -86,14 +89,19 @@ function randomizePlayer2Pieces(randomPlayer1Indexes, randomPlayer2Indexes) {
 
 // Add player 2 pieces to the grid 
 function addPlayer2PiecestoGrid (randomPlayer2Indexes,boxes, player2pieces) {
+    
     // for each of the random indexes/boxes that were picked
     // Place one of the player 2's characters inside 
     randomPlayer2Indexes.forEach(function(index, i) {
+        console.log(index)
+        console.log(i)
         // create a new image, using the image class
         let image = new Image();
+        console.log(player2pieces)
         // set the new image source to the image source of the droids 
         image.src = player2pieces[i].src
         console.log(image.src)
+        console.log(image)
         boxes[index].appendChild(image)
         console.log(boxes[index])
     })
