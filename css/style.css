@@ -61,8 +61,8 @@ button {
   }
 
 body{
-     /* background-image: url("/Images/background.webp"); */
-    background-color: #7393B3;
+    /* background-color: #7393B3; */
+    background-image: url("/Images/background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     margin:0px;
