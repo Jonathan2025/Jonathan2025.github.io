@@ -61,7 +61,7 @@ button {
   }
 
 body{
-    background-image: url(/images/background.webp);
+    background-image: url(/Images/background.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin:0px;
